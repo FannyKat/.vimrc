@@ -4,17 +4,19 @@ filetype plugin indent on
 execute pathogen#infect()
 set mouse=a
 set number
+set hidden
 set relativenumber
 set clipboard=unnamedplus
 set t_Co=256
 set ruler
 set backspace=indent,eol,start
-set	nofixendofline
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+set nofixendofline
 set paste
 set showcmd
 set autoindent
-autocmd BufWritePre *.c :%s/\s\+$//e
+set shortmess+=AaO "ignore sw files
+autocmd BufWritePre *.c :%s/\s\+$//e "trim whitespaces on save
+au VimEnter *  NERDTree
 
 setlocal foldmethod=indent
 set foldlevelstart=99
