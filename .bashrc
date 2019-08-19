@@ -162,6 +162,12 @@ bind "set show-all-if-ambiguous on"
 bind "set show-all-if-unmodified on"
 bind "set menu-complete-display-prefix on"
 
+# Key bindings, up/down arrow searches through history
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
+bind '"\eOA": history-search-backward'
+bind '"\eOB": history-search-forward'
+
 export USER=fcatusse
 
 export MAIL=fcatusse@student.42.fr
