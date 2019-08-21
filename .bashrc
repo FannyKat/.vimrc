@@ -115,7 +115,7 @@ alias gls='git ls-files'
 
 # i3 aliases
 alias gnome-control='XDG_CURRENT_DESKTOP=GNOME; gnome-control-center'
-alias i3lock='i3lock -b -f -c ffcbd3'
+alias i3lock='i3lock -b -f -c 66484d'
 
 # brightness-handler aliases
 alias b0='xrandr --output eDP1 --brightness 0'
