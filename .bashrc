@@ -113,8 +113,9 @@ alias gco='git checkout'
 alias gb='git branch'
 alias gls='git ls-files'
 
-# gnome-control-center alias for i3 env
+# i3 aliases
 alias gnome-control='XDG_CURRENT_DESKTOP=GNOME; gnome-control-center'
+alias i3lock='i3lock -b -f -c ffcbd3'
 
 # brightness-handler aliases
 alias b0='xrandr --output eDP1 --brightness 0'
@@ -157,6 +158,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Enable Tab Key/auto-completion
 bind TAB:menu-complete
 bind "set show-all-if-ambiguous on"
 bind "set show-all-if-unmodified on"
@@ -169,5 +171,4 @@ bind '"\eOA": history-search-backward'
 bind '"\eOB": history-search-forward'
 
 export USER=fcatusse
-
 export MAIL=fcatusse@student.42.fr
