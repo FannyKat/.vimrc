@@ -165,4 +165,4 @@ bar {
 exec --no-startup-id xsetroot -solid "#66484d"
 
 # Manage screen display with HDMI connected
-xrandr | grep 'HDMI1 connected' && xrandr --output eDP1 --auto --output HDMI1 --auto --left-of eDP1
+xrandr | grep 'HDMI1 connected' && xrandr --output eDP1 --auto --output HDMI1 --auto --right-of eDP1
