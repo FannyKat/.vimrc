@@ -164,5 +164,5 @@ bar {
 # Set a color background in desktop
 exec --no-startup-id xsetroot -solid "#66484d"
 
-# Manage screen display with HDMI connected
-xrandr | grep 'HDMI1 connected' && xrandr --output eDP1 --auto --output HDMI1 --auto --right-of eDP1
+# Manage screen workspaces with HDMi connected
+exec --no-startup-id xrandr --output eDP1 --auto --output HDMI1 --auto --right-of eDP1
