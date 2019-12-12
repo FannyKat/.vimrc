@@ -14,14 +14,23 @@ set nofixendofline
 set paste
 set showcmd
 set autoindent
-set shortmess+=AaO "ignore sw files
+set noswapfile
+"set shortmess+=AaO "ignore sw files
+set cursorline
 autocmd BufWritePre *.c :%s/\s\+$//e "trim whitespaces on save
 au VimEnter *  NERDTree
 
+"Tabulation
+set tabstop=4
+set shiftwidth=4
+set cindent
+
+"Fold method
 setlocal foldmethod=indent
 set foldlevelstart=99
 hi Folded			cterm=italic ctermfg=89 ctermbg=225
 
+"Vim colors
 hi Conditional		ctermfg=153
 hi CursorLineNr		ctermfg=89
 hi Comment			ctermfg=89
