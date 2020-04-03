@@ -101,6 +101,7 @@ alias r='reset'
 alias mk='clear && make'
 alias brc='source ~/.bashrc'
 alias vrc='source ~/.vimrc'
+alias hdmi='exec xrandr --output eDP1 --auto --output HDMI1 --auto --right-of eDP1'
 
 # git aliases
 alias gst='git status'
@@ -114,7 +115,7 @@ alias gb='git branch'
 alias gls='git ls-files'
 
 # i3 aliases
-alias gnome-control='XDG_CURRENT_DESKTOP=GNOME; gnome-control-center'
+alias gc='XDG_CURRENT_DESKTOP=GNOME; gnome-control-center'
 alias i3lock='i3lock -b -f -c 66484d'
 
 # brightness-handler aliases
@@ -133,6 +134,9 @@ alias b10='xrandr --output eDP1 --brightness 1'
 # alias clipboard
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
+
+# valgrind
+alias VL="valgrind --leak-check=full --show-leak-kinds=definite,indirect"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
